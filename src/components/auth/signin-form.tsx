@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 export const SignInForm = () => {
     const router = useRouter();
@@ -28,7 +29,11 @@ export const SignInForm = () => {
                 password
             />
 
-            <button onClick={handleEnterButton}>Entrar</button>
+            <Button
+                label="Entrar"
+                onclick={handleEnterButton}
+                size={1}
+            />
         </>
     );
 };
