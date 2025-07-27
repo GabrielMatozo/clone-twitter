@@ -8,10 +8,10 @@ export default function SignInPage() {
             <Logo size={56} />
             <h1 className="mt-10 text-2xl">Entre na sua conta</h1>
             <div className="mt-10 mb-14 flex flex-col gap-6">
-                <SignInForm/>
+                <SignInForm />
             </div>
             <div className="flex flex-col justify-center items-center gap-1 md:flex-row">
-                <div className="text-gray-500">Ainda não tenho uma conta?</div>
+                <div className="text-gray-500">Ainda não tem uma conta?</div>
                 <Link href="/auth/signup" className="hover:underline">Cadastre-se</Link>
             </div>
         </div>

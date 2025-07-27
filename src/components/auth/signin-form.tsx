@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { Input } from "../ui/input";
 
 export const SignInForm = () => {
     const router = useRouter();
@@ -14,17 +15,17 @@ export const SignInForm = () => {
 
     return (
         <>
-            <input
-                type="email"
+            <Input
                 placeholder="Digite seu e-mail"
                 value={emailField}
-                onChange={(e) => setEmailFField(e.target.value)}
+                onChange={t => setEmailFField(t)}
             />
-            <input
-                type="password"
+
+            <Input
                 placeholder="Digite sua senha"
                 value={passwordField}
-                onChange={(e) => setPasswordField(e.target.value)}
+                onChange={t => setPasswordField(t)}
+                password
             />
 
             <button onClick={handleEnterButton}>Entrar</button>
